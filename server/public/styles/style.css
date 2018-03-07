@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    display: inline-block;
+    background-color: lightblue;
+    margin: auto;
+    width: 800px;
+    height: 600px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(182, 0, 182);
+    color: orange;
+    text-shadow: 3px 2px black;
+    padding: 1em;
+   
+}
+
+.header-span {
+    font-size: 50px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#name-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 1em;;
+}
+
+#output {
+    display: block;
+}
+
+p {
+    margin-left: 1em;
+    display: flex;
+}
+
+.div-btn {
+    
+}
