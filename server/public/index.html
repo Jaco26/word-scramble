@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="wordScramble">
   <head>
     <meta charset="utf-8">
-    <title>Vanilla JS Practice </title>
-    <script src="vendors/angular.js"></script>
-    <script src="vendors/angular-route.js"></script>
+    <title>Word Scramble Game</title>
+    <script src="vendors/angular.min.js"></script>
+    <script src="vendors/angular-route.min.js"></script>
     <script src="scripts/client.js"></script>
-
-    
+    <script src="scripts/controllers/gameplay.controller.js"></script>
+    <script src="scripts/controllers/gamehistory.controller.js"></script>
+    <script src="scripts/services/game.service.js"></script>
     <link rel="stylesheet" href="styles/style.css">
-
   </head>
   <body>
-
     <div class="container">
       <header class="heading">
         <h1>ENTER <br>YOUR NAME</h1>
@@ -20,21 +19,16 @@
           <span class="header-span">SCRAMBLED</span>
         </h3>
       </header>
-      
-      <main>
-        <div id="name-input">
-          <label for="nameIn">Enter your name</label> &nbsp;
-          <input type="text" id="nameIn"> &nbsp;
-          <button type="button" id="readyNow">Scramble</button>
-        </div>
 
-        <div id="output">
-          
-        </div>
+      <div>
+        <a href="/#!play">Play</a>
+        <a href="/#!history">History</a>
+      </div>
 
-      </main>
+      <section ng-view>
+
+      </section>
     </div>
    
-    <script src="script.js"></script>
   </body>
 </html>
