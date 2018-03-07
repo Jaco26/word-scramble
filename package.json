@@ -1,13 +1,14 @@
 {
   "name": "basicJS",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "description": "Word scramble guess game",
+  "main": "server.js",
   "scripts": {
+    "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jacob Albright",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.9",
